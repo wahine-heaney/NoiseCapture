@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="librarys/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh">
+
+    <!-- Mapbox -->
+
+    <script src='librarys/mapbox-gl.js'></script>
+    <link href='librarys/mapbox-gl.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="style.css">
+    <title>File Viewer</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 file-selection">
+                <h2>File Viewer</h2>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text">Maps</label>
+                    </div>
+                    <select class="custom-select" id="file-selector" onchange="selectLayers(this.options)" multiple="multiple" size="8">
+                    </select>
+                </div>
+            </div>
+            <div class="col-9">
+                <div id="map"></div>
+            </div>
+        </div>
+        <!-- Lodash -->
+        <!-- <script src="librarys/lodash.min.js" integrity="sha256-VeNaFBVDhoX3H+gJ37DpT/nTuZTdjYro9yBruHjVmoQ="></script> -->
+        <script src="app.js"></script>
+</body>
+
+</html>
